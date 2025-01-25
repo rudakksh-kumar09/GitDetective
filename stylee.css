@@ -1,0 +1,415 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+  
+  *{
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+
+  }
+
+  body{
+    background-color: var(--lm-bg);
+    font-size: 13px;
+    color: var(--lm-text);
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  }
+
+  .wrapper
+  {
+
+     width: 700px;
+     height: 150vh;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     top:55%;
+     left:50%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     flex: wrap;
+     gap:36px;
+  }
+  .Header
+  {
+  
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+  }
+
+  #Title{
+     font-size: 1.4rem;
+  }
+
+  .app{
+
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   
+  }
+  #Mode-btn
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90px;
+    letter-spacing: 2.5px;
+    color: var(--lm-text);
+    font-weight: bold;
+    gap:20px;
+    cursor: pointer;
+  }
+.search-content{
+
+    position: relative;
+ 
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    height: 100%;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./assets/Images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: center;
+    background-size: 20px;
+    margin-bottom: 90px;
+
+}
+
+
+
+#search-bar{
+    border: none;
+    width: 75%;
+    font-size: 13px;
+    outline: none;
+    background: none;
+    color: var(--lm-text);
+    padding-left: 50px;
+}
+
+#search-bar ::placeholder{
+
+    color: var(--lm-text);
+    letter-spacing: -0.5px;
+    font-size: 12px;
+
+
+}
+
+.btn-search {
+
+    min-width: 84px;
+    padding: 12px 16px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+  }
+  
+  .btn-search:active {
+    transform: scale(0.975);
+  }
+  
+  .Profile-content{
+
+   
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 50px;
+  
+    
+  }
+  .profileInfo{
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* justify-content: space-evenly; */
+    
+  }
+.profile-header{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+   
+}
+#avtar{
+
+    width: 120px;
+    border-radius: 90px;
+}
+.username{
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  
+    
+}
+
+.username h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+}
+ #NameLink{
+    color: var(--btn);
+    font-size: 20px;
+
+ }
+#Date{
+   
+  font-size: 1.5rem;
+}
+#Bio{
+   font-size: 1.5rem;
+}
+ .Profile-status{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lm-bg);
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px;
+    gap:20px;
+
+ }
+ .profile-start{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+ }
+
+ .Start-Title{
+    font-size: 15px;
+ }
+ .start-Value{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+ }
+.profile-bottom {
+    display: flex;
+    /* flex-direction: column; */
+    
+    justify-content: space-between;
+    gap: 160px;
+  }
+  
+  .profile-info-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    display: flex;
+  
+    /* justify-content: center; */
+
+    /* align-items: center; */
+  }
+  
+  .profile-bottom2 {
+    display: flex;
+    /* flex-direction: column; */
+    
+    justify-content: space-between;
+    gap: 160px;
+  }
+  
+ 
+  
+  .profile-info-wrapper a {
+    color: var(--lm-text);
+    word-break: break-all;
+  }
+  
+  #error {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    right: 10px;
+    top: -25px;
+    letter-spacing: 1px;
+  }
+  
+  #Loaction{
+    
+    font-weight: bold;
+    color: var(--lm-text-alt);
+    font-size: 1rem;
+  }
+  #GitHubLink{
+    font-weight: bold;
+    color: var(--lm-text-alt);
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+
+  #Twitter{
+    font-weight: bold;
+    color: var(--lm-text-alt);
+    font-size: 1rem;
+  }
+
+  #Company{
+
+    font-weight: bold;
+    color: var(--lm-text-alt);
+    font-size: 1rem;
+  }
+
+
+  
+  /* Media Queries */
+
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 90%;
+    gap: 24px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding: 20px;
+  }
+
+  #Title {
+    font-size: 1.2rem;
+  }
+
+  .profileInfo {
+    gap: 16px;
+  }
+
+  .Profile-status {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .profile-bottom, .profile-bottom2 {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .Header {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #Mode-btn {
+    width: auto;
+    letter-spacing: 1.5px;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .Profile-content {
+    padding: 30px;
+  }
+
+  .profile-bottom, .profile-bottom2 {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile-info-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+
+ @media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    transform: translate(0, 0);
+    top: auto;
+    left: auto;
+    padding: 16px;
+  }
+
+  #Title {
+    font-size: 1rem;
+  }
+
+  .profile-header {
+    gap: 12px;
+  }
+
+  #avtar {
+    width: 80px;
+  }
+
+  .Profile-status {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .start-Value {
+    font-size: 14px;
+  }
+
+  #search-bar {
+    font-size: 12px;
+  }
+
+  .btn-search {
+    min-width: 70px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .profile-info-wrapper {
+    gap: 12px;
+  }
+} 
